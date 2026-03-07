@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remindy · Personalized Lock Screen Widgets</title>
+  <meta
+    name="description"
+    content="Remindy is a personal app focused on customizable lock screen widgets, simple information display, and future productivity features."
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .page-shell {
+      padding: 32px 0 72px;
+    }
+
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .content-card {
+      grid-column: span 12;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.10),
+        rgba(255, 255, 255, 0.05)
+      );
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      padding: 28px;
+    }
+
+    .content-card h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+      letter-spacing: -0.03em;
+    }
+
+    .content-card p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-top: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .feature-item {
+      grid-column: span 4;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .feature-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .feature-item p {
+      margin: 0;
+      font-size: 0.96rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(124, 156, 255, 0.14);
+      border: 1px solid rgba(124, 156, 255, 0.20);
+      color: #dbe4ff;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .changelog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .changelog-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .changelog-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .changelog-version {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .changelog-date {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .changelog-item ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .mini-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .feature-item {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding-top: 12px;
+      }
+
+      .content-card {
+        padding: 22px 18px;
+        border-radius: 22px;
+      }
+
+      .feature-item {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="eyebrow">Remindy · Lock Screen Widgets</div>
+        <h1>Simple, customizable information on your lock screen.</h1>
+        <p>
+          Remindy is a personal app focused on making lock screen widgets more useful and more
+          personal. It starts simple: clean widgets, simple information, and lightweight
+          customization. Over time, it will expand with more utility and personalization features.
+        </p>
+
+        <div class="top-actions">
+          <a class="button primary" href="/remindy/privacy-policy/">Privacy Policy</a>
+          <a class="button" href="/remindy/terms/">Terms & Conditions</a>
+          <a class="button" href="/">Back to Projects</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <div class="page-grid">
+        <section class="content-card">
+          <h2>About Remindy</h2>
+          <p>
+            Remindy is being built as a lightweight app to help users display useful information
+            through lock screen widgets in a simple and visually pleasant way. The initial focus
+            is clarity, customization, and quick access to information without opening the app
+            constantly.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">Lock screen widgets</span>
+            <span class="pill">Simple setup</span>
+            <span class="pill">Personalization</span>
+            <span class="pill">More features coming later</span>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Current Focus</h2>
+          <p>
+            The first version of Remindy is centered around providing a simple way to configure
+            and display personalized widgets with useful information on the lock screen.
+          </p>
+
+          <div class="feature-grid">
+            <article class="feature-item">
+              <h3>Simple widget customization</h3>
+              <p>
+                Configure widgets in a straightforward way without complicated setup flows.
+              </p>
+            </article>
+
+            <article class="feature-item">
+              <h3>Clean information display</h3>
+              <p>
+                Show useful information clearly and quickly, designed for at-a-glance viewing.
+              </p>
+            </article>
+
+            <article class="feature-item">
+              <h3>Lightweight experience</h3>
+              <p>
+                Keep the app fast, minimal, and focused on the most important use cases first.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-card">
+          <h2>Planned Features</h2>
+          <p>
+            Remindy starts small, but the vision is broader. Future versions may include more
+            personalization, richer content, and utility-focused improvements.
+          </p>
+
+          <div class="feature-grid">
+            <article class="feature-item">
+              <h3>More widget styles</h3>
+              <p>
+                Additional visual themes, layouts, and presentation options for different tastes.
+              </p>
+            </article>
+
+            <article class="feature-item">
+              <h3>Expanded information sources</h3>
+              <p>
+                New types of content and useful data displayed directly through widgets.
+              </p>
+            </article>
+
+            <article class="feature-item">
+              <h3>Better personalization</h3>
+              <p>
+                More control over what is shown, how it looks, and how it fits the user's needs.
+              </p>
+            </article>
+          </div>
+
+          <p class="mini-note">
+            This section can evolve as the product direction becomes more defined.
+          </p>
+        </section>
+
+        <section class="content-card">
+          <h2>Changelog</h2>
+          <p>
+            A simple public history of important updates and milestones for Remindy.
+          </p>
+
+          <div class="changelog-list">
+            <article class="changelog-item">
+              <div class="changelog-item-header">
+                <div class="changelog-version">v0.1.0 · Initial concept</div>
+                <div class="changelog-date">March 2026</div>
+              </div>
+              <ul>
+                <li>Project page created.</li>
+                <li>Initial app concept defined around personalized lock screen widgets.</li>
+                <li>Public legal/documentation structure prepared.</li>
+              </ul>
+            </article>
+
+            <article class="changelog-item">
+              <div class="changelog-item-header">
+                <div class="changelog-version">v0.2.0 · Planned first usable version</div>
+                <div class="changelog-date">Upcoming</div>
+              </div>
+              <ul>
+                <li>Basic widget configuration flow.</li>
+                <li>Initial set of simple widget content options.</li>
+                <li>Early personalization improvements.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        © 2026 Diego Valdés · Remindy
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
