@@ -13,42 +13,26 @@
   <meta property="og:url" content="https://dvaldesg.github.io/remindy/privacy-policy/" />
   <link rel="icon" href="/assets/remindy-app-logo.png" />
   <link rel="stylesheet" href="/css/styles.css" />
+  <script src="/components/site-nav.js"></script>
+  <script src="/components/site-footer.js"></script>
+  <script src="/components/page-hero.js"></script>
 </head>
 <body>
-  <nav class="site-nav">
-    <div class="container">
-      <div class="site-nav-inner">
-        <div class="site-nav-left">
-          <a href="/" class="site-nav-brand">Home</a>
-          <a href="/cv/">CV</a>
-        </div>
-        <div class="site-nav-links">
-          <a href="https://github.com/dvaldesg" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/diego-valdes-ganga" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://instagram.com/dvaldesg" target="_blank" rel="noopener">Instagram</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <site-nav></site-nav>
 
-  <header class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="eyebrow">Remindy · Legal</div>
-        <h1>Privacy Policy</h1>
-        <p>
-          This Privacy Policy explains how Remindy may collect, use, and protect information
-          when you use the app and related services.
-        </p>
-
-        <div class="top-actions">
-          <a class="button primary" href="/remindy/">Back to Remindy</a>
-          <a class="button" href="/remindy/terms/">Terms & Conditions</a>
-          <a class="button" href="/">All Projects</a>
-        </div>
-      </div>
+  <page-hero>
+    <div class="eyebrow">Remindy · Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>
+      This Privacy Policy explains how Remindy may collect, use, and protect information
+      when you use the app and related services.
+    </p>
+    <div class="top-actions">
+      <a class="button primary" href="/remindy/">Back to Remindy</a>
+      <a class="button" href="/remindy/terms/">Terms & Conditions</a>
+      <a class="button" href="/">All Projects</a>
     </div>
-  </header>
+  </page-hero>
 
   <main class="legal-shell">
     <div class="container">
@@ -171,12 +155,6 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        © 2026 Diego Valdés · Remindy
-      </div>
-    </div>
-  </footer>
+  <site-footer suffix="Remindy"></site-footer>
 </body>
 </html>
