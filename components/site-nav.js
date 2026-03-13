@@ -5,12 +5,12 @@ class SiteNav extends HTMLElement {
         <div class="container">
           <div class="site-nav-inner">
             <div class="site-nav-left">
-              <a href="/" class="site-nav-brand">Home</a>
+              <a href="/home/" class="site-nav-brand">Home</a>
               <a href="/cv/">CV</a>
             </div>
             <div class="site-nav-links">
               <div class="nav-dropdown">
-                <a href="/#projects" class="nav-dropdown-trigger">Projects</a>
+                <a href="/home/#projects" class="nav-dropdown-trigger">Projects</a>
                 <div class="nav-dropdown-menu">
                   <a href="/remindy/">
                     <img src="/assets/remindy-app-logo.png" alt="" class="nav-dropdown-icon" />

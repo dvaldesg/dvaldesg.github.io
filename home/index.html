@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego Valdés · Software Engineer</title>
+    <meta name="description" content="Diego Valdés, Software Engineer from Chile. Building mobile and integrations at Vambe." />
+    <meta property="og:title" content="Diego Valdés · Software Engineer" />
+    <meta property="og:description" content="Diego Valdés, Software Engineer from Chile. Building mobile and integrations at Vambe." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dvaldesg.github.io/home/" />
+    <link rel="icon" href="/assets/gh-pfp.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/components/site-nav.js" defer></script>
+    <script src="/components/site-footer.js" defer></script>
+    <script src="/components/page-hero.js" defer></script>
+    <script src="/components/vambe-experience.js" defer></script>
+    <script src="/components/app-card.js" defer></script>
+  </head>
+  <body>
+    <site-nav></site-nav>
+
+    <page-hero></page-hero>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Currently</h2>
+            <p>What I'm building right now.</p>
+          </div>
+        </div>
+
+        <div class="exp-list">
+          <vambe-experience></vambe-experience>
+        </div>
+
+        <div class="section-cta">
+          <a class="button" href="/cv/">Know more</a>
+        </div>
+
+        <div class="section-header" id="projects">
+          <div>
+            <h2>Projects</h2>
+            <p>Personal apps and side experiments.</p>
+          </div>
+        </div>
+
+        <section class="apps-grid">
+          <app-card
+            href="/remindy/"
+            logo="/assets/remindy-app-logo.png"
+            placeholder="R"
+            title="Remindy"
+            badge="Personal Project"
+            description="A lock screen widget app for iPhone. Customize what shows up at a glance, without unlocking your phone."
+          ></app-card>
+        </section>
+      </div>
+    </main>
+
+    <site-footer></site-footer>
+  </body>
+</html>
